@@ -13,6 +13,8 @@ public class usuario {
      static String Nome;
       static String Email;
        static String Senha;
+       
+       
     
     
 }

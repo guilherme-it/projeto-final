@@ -34,6 +34,10 @@ public class loginservlet extends HttpServlet {
         usuario.Nome = request.getParameter("Nome");
         usuario.Email = request.getParameter("Email");
         usuario.Senha = request.getParameter("Senha");
+        
+        usuario.mostrarNome();
+        usuario.mostrarEmail();
+        usuario.mostrarSenha();
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
